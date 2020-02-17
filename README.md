@@ -106,7 +106,7 @@ So far our Store’s data flow looks like this:
 By default, 100 items will be cached in memory for 24 hours. You may pass in your own instance of a Guava Cache to override the default policy.
 
 
-### Busting through the cache
+### Skipping the Cache & Persister
 
 Alternatively you can call `store.fetch(barCode)` to get an `Observable` that skips the memory (and optional disk cache).
 
